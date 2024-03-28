@@ -42,9 +42,9 @@ index 00000000..41e82117
 +        env:
 +          IMAGE_REGISTRY: docker.io
 +          REGISTRY_NAMESPACE: oussabe
-+          OCS_BUNDLE_IMG_LOCATION: docker.io/oussabe
-+          ODF_CONSOLE_IMG_LOCATION: docker.io/oussabe
-+          OPERATOR_CATALOGSOURCE_NAMESPACE: csc-operators
++          OCS_BUNDLE_IMG_LOCATION: docker.io/oussabe/ocs-operator
++          ODF_CONSOLE_IMG_LOCATION: docker.io/oussabe/odf-operator
++          OPERATOR_CATALOGSOURCE_NAMESPACE: oussabe
 +        run: |
 +          branch="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
 +          version="${branch#release-}"
